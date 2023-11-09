@@ -358,7 +358,7 @@ def getAnalysisModel(
         raise FaceModelException("Loading of analysis model failed")
 
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=2)
 def getFaceSwapModel(
     model_path: str, use_gpu: bool = False
 ) -> upscaled_inswapper.UpscaledINSwapper:
