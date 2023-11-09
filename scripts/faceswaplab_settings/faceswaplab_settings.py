@@ -19,7 +19,7 @@ def on_ui_settings() -> None:
     shared.opts.add_option(
         "faceswaplab_use_gpu",
         shared.OptionInfo(
-            False,
+            True,
             "Use GPU, only for CUDA on Windows/Linux - experimental and risky, can messed up dependencies (requires restart)",
             gr.Checkbox,
             {"interactive": True},
